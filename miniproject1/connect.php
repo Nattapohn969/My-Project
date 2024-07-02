@@ -4,7 +4,7 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-$base_url = 'http://localhost/My-Project';
+$base_url = 'http://localhost:46/My-Project';
 
 $servername = "localhost";
 $username = "root";
