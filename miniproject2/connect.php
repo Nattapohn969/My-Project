@@ -1,23 +1,14 @@
 <?php
-// Check if session is not already started, then start it
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
+$servername = "localhost"; 
+$username = "root";    
+$password = "";    
+$dbname = "minipro1"; 
+
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// ตรวจสอบการเชื่อมต่อ
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
-
-$base_url = 'http://localhost:46/My-Project';
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "store";
-
-// Establish database connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-
-// Check connection
-if (!$conn) {
-    error_log("Connection failed: " . mysqli_connect_error());
-    die("Connection failed: Please contact support.");
-}
-
 ?>
