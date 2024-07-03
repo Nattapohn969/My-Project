@@ -1,0 +1,110 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background-color: #a98eda;
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+.wrapper{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color : #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(225, 225,225,0.30);
+    border: 1px solid rgba(225, 225,225,0.34);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+
+.screen{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(225, 225, 225, 0.75);
+    border: 1px solid rgba(225, 225, 225, 0.01);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color : #232323;
+    font-size: 35;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+}
+
+.cal-but-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.cal-but{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(225, 225, 225, 0.75);
+    border: 1px solid rgba(225, 225, 225, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color : #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+}
+
+.cal-but:last-child{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(225, 225, 225, 0.75);
+    border: 1px solid rgba(225, 225, 225, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color : #fff;
+    background: #d72880;
+}
+
+.cal-but:last-child:hover{
+    overscroll-behavior-block: inherit;
+    color: inherit;
+}
+
+.cal-but:hover{
+    background-color:inherit;
+}
+
+.double{
+    flex-basis: 47%;
+    border-radius: 16px;
+    border: 1px solid rgba(225, 225, 225, 0.01);
+    font-family: inherit;
+    font-size: 24px;
+
+    
+}
+
+.triple{
+    flex-basis: 73%;
+    border-radius: 16px;
+    border: 1px solid rgba(225, 225, 225, 0.01);
+    font-family: inherit;
+    font-size: 24px;
+}
