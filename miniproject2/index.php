@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Admin Panel</title>
+    <title>queue</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
