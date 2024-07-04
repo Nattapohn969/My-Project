@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql_insert = "INSERT INTO queues (queue_number) VALUES ('$next_queue_number')";
     if (mysqli_query($conn, $sql_insert)) {
        
-        header("Location: admin.php");
+        header("Location: index.php");
         exit;
     } else {
         echo "Error: " . $sql_insert . "<br>" . mysqli_error($conn);

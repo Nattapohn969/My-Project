@@ -11,7 +11,7 @@
         <center><img src="expt.jpg"alt="expt"></center>
 
         <h3>Check Your Queue</h3>
-        <form action="customer.php" method="GET">
+        <form action=".php" method="GET">
             <label for="queue_number">Enter Your queue number:</label>
             <input type="text" id="queue_number" name="queue_number" required>
             <button type="submit">Check</button>
